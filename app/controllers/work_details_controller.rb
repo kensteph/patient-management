@@ -65,6 +65,6 @@ class WorkDetailsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def work_detail_params
-      params.require(:work_detail).permit(:patientWork_id, :service_id)
+      params.require(:work_detail).permit(:patient_work_id, :service_id)
     end
 end
