@@ -1,0 +1,27 @@
+<%= form_with(model: work_detail) do |form| %>
+  <% if work_detail.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(work_detail.errors.count, "error") %> prohibited this work_detail from being saved:</h2>
+
+      <ul>
+        <% work_detail.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :patientWork_id, style: "display: block" %>
+    <%= form.text_field :patientWork_id %>
+  </div>
+
+  <div>
+    <%= form.label :service_id, style: "display: block" %>
+    <%= form.text_field :service_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
