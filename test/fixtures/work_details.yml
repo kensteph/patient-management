@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patientWork: one
+  service: one
+
+two:
+  patientWork: two
+  service: two

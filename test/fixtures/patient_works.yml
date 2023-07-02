@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  estimation: 1.5
+  discount: 1
+  patient: one
+
+two:
+  description: MyString
+  estimation: 1.5
+  discount: 1
+  patient: two
